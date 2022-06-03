@@ -44,8 +44,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
   patch product_path(@product),params:{product:{product_name: "tejas"}}  
   assert_redirected_to products_url
 end
- 
-    
+   
   test "should get destroy" do
     get products_path(@product)
     assert_response :success
